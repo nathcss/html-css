@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title> Midias em HTML5 </title>
+
+</head>
+<body>
+  <h1> Imagem Dinamica </h1>
+  <p> Tente abrir esse site em varios dispositivos
+      diferentes ou simplesmente aumente e diminua
+      o tamanho do seu navegador.
+  </p>
+
+  <picture>
+    <source media="(max-width: 750px)" srcset="imagens/fotoP.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/fotoM.png" type="image/png">
+    <img src="Imagens/fotoG.png" alt="Imagem flexivel">
+  </picture>
+
+  <h1> Reproduzindo Audio </h1>
+  <p> Vamos aprender a reproduzir audios em HTML5 </p>
+  <audio preload="auto" controls autoplay loop>
+    <source src="Midia/Lonely Day - Telecasted.mp3" type="audio/mpeg">
+    <source src="Midia/Savior - Telecasted.ogg" type="audio/ogg">
+    <source src="Midia/Searching For Time - Telecasted.wav" type="audio/wav">
+    <p>
+      Seu navegador nao suporta audio.
+      <a href="Midia/Lonely Day - Telecasted.mp3" download="">
+        Clique aqui para baixar o arquivo MP3
+      </a>
+    </p>
+  </audio>
+
+
+</body>
+</html>
