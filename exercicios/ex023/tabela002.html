@@ -25,8 +25,16 @@
       background-color: lightgray;
     }
     thead, tfoot {
-      background-color: gray;
+      background-color: rgb(97, 96, 96);
       color: white;
+    }
+
+    tbody > tr:nth-child(odd) { /* 2n-1*/
+      background-color: white;
+    }
+
+    tbody > tr:nth-child(even) { /* 2n */
+      background-color: lightgray;
     }
 
     td.num {
